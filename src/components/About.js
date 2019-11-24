@@ -21,7 +21,7 @@ const About = () => {
           <p>
             I am a web development and programming enthusiast. I am a self
             taught programmer, I learned to program by doing courses on the
-            <span className="font-weight-bold text-primary"> Coursra</span>{" "}
+            <span className="font-weight-bold text-primary"> Coursera</span>{" "}
             platform and tutorials on
             <span className="font-weight-bold text-primary"> Youtube</span>, my
             main programming languages are
