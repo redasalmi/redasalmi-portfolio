@@ -1,0 +1,60 @@
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.navbar {
+  font-size: 20px;
+}
+
+.navbar-brand,
+.nav-link {
+  color: lightcoral !important;
+  cursor: pointer;
+}
+
+.navbar-brand:hover,
+.nav-link:hover,
+.active-link {
+  color: white !important;
+}
+
+.contact:hover,
+.skill:hover {
+  color: #bd5d38 !important;
+}
+
+.card {
+  max-width: 400px;
+  margin-top: 20px !important;
+}
+
+svg:hover.python path,
+svg:hover.bootstrap path:first-child,
+svg:hover.flask path,
+svg:hover.archlinux path,
+svg:hover.mysql path:not(:first-child),
+svg:hover.phpmyadmin path:not(:nth-child(2)):not(:nth-child(1)) {
+  fill: #bd5d38;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #bd5d38;
+}
