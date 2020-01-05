@@ -7,7 +7,7 @@ const About = () => {
         <div className="col-12">
           <h1 className="text-primary">Reda Salmi</h1>
           <h4>
-            Searching for a first experience as a web developer (react JS)
+            Web Developer (react JS) at Buileo
           </h4>
           <h5>
             <span className="fas fa-map-marker-alt text-info">
