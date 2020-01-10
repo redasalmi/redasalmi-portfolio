@@ -122,7 +122,7 @@ const Main = () => {
           <ThemeSwitch
             theme={theme}
             toggleTheme={toggleTheme}
-            className="d-block d-md-none ml-auto"
+            className="d-block d-md-none ml-auto mr-3 mr-sm-0"
           />
         </div>
         <CSSTransition

@@ -1,14 +1,14 @@
 import React from "react";
 
 const About = () => {
+  const myAge = new Date().getFullYear() - 1992;
   return (
     <div className="row mt-md-5">
-      <div className="col-12 col-md-6">
+      <div className="col-12 col-md-6 p-1 p-md-0">
         <div className="col-12">
           <h1 className="text-primary">Reda Salmi</h1>
-          <h4>
-            Web Developer (react JS) at Buileo
-          </h4>
+          <h4>Web Developer (react JS) at Buileo</h4>
+          <h5>{myAge} years old</h5>
           <h5>
             <span className="fas fa-map-marker-alt text-info">
               {" "}
@@ -21,7 +21,10 @@ const About = () => {
           <p>
             I am a web development and programming enthusiast. I am a self
             taught programmer, I learned to program by doing courses on the
-            <span className="font-weight-bold text-primary"> Coursera</span>{" "}
+            <span className="font-weight-bold text-primary">
+              {" "}
+              Coursera
+            </span>{" "}
             platform and tutorials on
             <span className="font-weight-bold text-primary"> Youtube</span>, my
             main programming languages are
@@ -74,7 +77,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="col-12 col-md-6 text-center">
+      <div className="col-12 col-md-6 text-center text-md-right p-1 p-md-0">
         <img src="/reda-pic.jpg" alt="reda" className="img-fluid" />
       </div>
     </div>
