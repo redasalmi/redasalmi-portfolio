@@ -1,4 +1,5 @@
 import React from "react";
+import CustomIcon from "./Icons";
 
 const Interests = () => {
   return (
@@ -7,7 +8,7 @@ const Interests = () => {
 
       <div className="m-4">
         <h4 className="d-inline text-info">
-          <span className="fas fa-code"></span> Programming:
+          <CustomIcon iconName="code" /> Programming:
         </h4>
         <p className="d-inline lead">
           &nbsp;I am a big programming fan, I like to create little scripts to
@@ -19,7 +20,7 @@ const Interests = () => {
 
       <div className="m-4">
         <h4 className="d-inline text-info">
-          <img src="/bow.png" alt="archery bow" width="30px" /> Archery:
+          <CustomIcon iconName="bow" width="22px" height="22px" /> Archery:
         </h4>
         <p className="d-inline lead">
           &nbsp;I've been an archer since 2012 and became an archery coach in
@@ -32,8 +33,7 @@ const Interests = () => {
 
       <div className="m-4">
         <h4 className="d-inline text-info">
-          <span className="fas fa-gamepad"></span> PC Building &amp; Video
-          Games:
+          <CustomIcon iconName="gamepad" /> PC Building &amp; Video Games:
         </h4>
         <p className="d-inline lead">
           &nbsp;Having a big interest in technology, I follow latest PC part

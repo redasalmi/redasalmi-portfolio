@@ -39,8 +39,9 @@ $orange-color: #bd5d38;
   color: $white-color !important;
 }
 
-.react-switch-bg img {
-  vertical-align: initial;
+.react-switch-bg div {
+  display: flex;
+  justify-content: center;
 }
 
 .contact:hover,
@@ -55,10 +56,12 @@ $orange-color: #bd5d38;
 
 svg:hover.python path,
 svg:hover.bootstrap path:first-child,
+svg:hover.redux path,
 svg:hover.flask path,
-svg:hover.archlinux path,
-svg:hover.mysql path:not(:first-child),
-svg:hover.phpmyadmin path:not(:nth-child(2)):not(:nth-child(1)) {
+svg:hover.mysql path,
+svg:hover.mongodb path,
+svg:hover.git path,
+svg:hover.archlinux path {
   fill: $orange-color;
 }
 
@@ -102,11 +105,11 @@ a:hover {
     color: $orange-color !important;
   }
 
-  .card-footer span:hover {
+  .contact.project:hover {
     color: #17a2b8 !important;
   }
 
-  .flask g {
+  .flask path {
     fill: $white-color;
   }
 }

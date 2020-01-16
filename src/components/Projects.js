@@ -7,6 +7,7 @@ import {
   CardSubtitle,
   CardFooter
 } from "reactstrap";
+import CustomIcon from "./Icons";
 
 const Projects = () => {
   return (
@@ -44,7 +45,10 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span className="fab fa-github fa-3x contact text-info"></span>
+                  <CustomIcon
+                    iconName="github"
+                    className="fa-3x contact project text-info"
+                  />
                 </a>
                 <a
                   href="https://itbooks.netlify.com/"
@@ -52,7 +56,10 @@ const Projects = () => {
                   target="_blank"
                   className="ml-4"
                 >
-                  <span className="fas fa-eye fa-3x contact text-info"></span>
+                  <CustomIcon
+                    iconName="eye"
+                    className="fa-3x contact project text-info"
+                  />
                 </a>
               </CardFooter>
             </Card>
@@ -86,7 +93,10 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span className="fab fa-github fa-3x contact text-info"></span>
+                  <CustomIcon
+                    iconName="github"
+                    className="fa-3x contact project text-info"
+                  />
                 </a>
                 <a
                   href="https://freeimg.netlify.com/"
@@ -94,7 +104,10 @@ const Projects = () => {
                   target="_blank"
                   className="ml-4"
                 >
-                  <span className="fas fa-eye fa-3x contact text-info"></span>
+                  <CustomIcon
+                    iconName="eye"
+                    className="fa-3x contact project text-info"
+                  />
                 </a>
               </CardFooter>
             </Card>
@@ -124,7 +137,10 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <span className="fab fa-github fa-3x contact text-info"></span>
+                  <CustomIcon
+                    iconName="github"
+                    className="fa-3x contact project text-info"
+                  />
                 </a>
                 <a
                   href="https://archerie.netlify.com/"
@@ -132,7 +148,10 @@ const Projects = () => {
                   target="_blank"
                   className="ml-4"
                 >
-                  <span className="fas fa-eye fa-3x contact text-info"></span>
+                  <CustomIcon
+                    iconName="eye"
+                    className="fa-3x contact project text-info"
+                  />
                 </a>
               </CardFooter>
             </Card>

@@ -1,11 +1,6 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
-import { ReactComponent as Python } from "../logo/python.svg";
-import { ReactComponent as Bootstrap } from "../logo/bootstrap.svg";
-import { ReactComponent as Flask } from "../logo/flask.svg";
-import { ReactComponent as Archlinux } from "../logo/archlinux.svg";
-import { ReactComponent as Mysql } from "../logo/mysql.svg";
-import { ReactComponent as PhpMyAdmin } from "../logo/phpmyadmin.svg";
+import CustomIcon from "./Icons";
 
 const Skills = () => {
   return (
@@ -15,55 +10,54 @@ const Skills = () => {
       <div className="col-12 col-md-6">
         <p className="col-12 lead mt-2">Programming skills:</p>
         <ul className="list-inline text-center text-md-left">
-          <li className="list-inline-item ml-4">
-            <span
-              className="fab fa-html5 fa-4x skill text-danger"
-              data-tip="HTML"
-            ></span>
+          <li className="list-inline-item ml-4" data-tip="HTML">
+            <CustomIcon iconName="html5" className="fa-4x skill text-danger" />
           </li>
-          <li className="list-inline-item ml-4">
-            <span
-              className="fab fa-css3-alt fa-4x skill text-primary"
-              data-tip="CSS"
-            ></span>
+          <li className="list-inline-item ml-4" data-tip="CSS">
+            <CustomIcon iconName="css3" className="fa-4x skill text-primary" />
           </li>
-          <li className="list-inline-item ml-4">
-            <span
-              className="fab fa-js fa-4x skill text-warning"
-              data-tip="javascript"
-            ></span>
+          <li className="list-inline-item ml-4" data-tip="javascript">
+            <CustomIcon
+              iconName="javascript"
+              className="fa-4x skill text-warning"
+            />
           </li>
-          <li className="list-inline-item ml-4 align-top">
-            <Python
+          <li className="list-inline-item ml-4 align-top" data-tip="python">
+            <CustomIcon
               width="56px"
               height="64px"
-              data-tip="python"
+              iconName="python"
               className="python"
             />
           </li>
         </ul>
 
-        <p className="col-12 lead mt-2">Frameworks:</p>
+        <p className="col-12 lead mt-2">Libraries:</p>
         <ul className="list-inline text-center text-md-left">
-          <li className="list-inline-item ml-4 align-top">
-            <Bootstrap
+          <li className="list-inline-item ml-4 align-top" data-tip="bootstrap">
+            <CustomIcon
               width="56px"
               height="64px"
-              data-tip="bootstrap"
+              iconName="bootstrap"
               className="bootstrap"
             />
           </li>
-          <li className="list-inline-item ml-4">
-            <span
-              className="fab fa-react fa-4x skill text-info"
-              data-tip="react"
-            ></span>
+          <li className="list-inline-item ml-4" data-tip="react">
+            <CustomIcon iconName="react" className="fa-4x skill text-info" />
           </li>
-          <li className="list-inline-item ml-4 align-top">
-            <Flask
+          <li className="list-inline-item ml-4 align-top" data-tip="redux">
+            <CustomIcon
               width="56px"
               height="64px"
-              data-tip="flask"
+              iconName="redux"
+              className="redux"
+            />
+          </li>
+          <li className="list-inline-item ml-4 align-top" data-tip="flask">
+            <CustomIcon
+              width="56px"
+              height="64px"
+              iconName="flask"
               className="flask"
             />
           </li>
@@ -71,43 +65,42 @@ const Skills = () => {
 
         <p className="col-12 lead mt-2">Database:</p>
         <ul className="list-inline text-center text-md-left">
-          <li className="list-inline-item ml-4 align-top">
-            <Mysql
+          <li className="list-inline-item ml-4 align-top" data-tip="mysql">
+            <CustomIcon
               width="56px"
               height="64px"
-              data-tip="mysql"
+              iconName="mysql"
               className="mysql"
             />
           </li>
-          <li className="list-inline-item ml-4 align-top">
-            <PhpMyAdmin
-              width="120px"
+          <li className="list-inline-item ml-4 align-top" data-tip="mongodb">
+            <CustomIcon
+              width="56px"
               height="64px"
-              data-tip="phpmyadmin"
-              className="phpmyadmin"
+              iconName="mongodb"
+              className="mongodb"
             />
           </li>
         </ul>
 
         <p className="col-12 lead mt-2">Tools & other:</p>
         <ul className="list-inline text-center text-md-left">
-          <li className="list-inline-item ml-4">
-            <span
-              className="fab fa-git fa-4x skill text-danger"
-              data-tip="git"
-            ></span>
-          </li>
-          <li className="list-inline-item ml-4">
-            <span
-              className="fab fa-npm fa-4x skill text-danger"
-              data-tip="npm"
-            ></span>
-          </li>
-          <li className="list-inline-item ml-4 align-top">
-            <Archlinux
+          <li className="list-inline-item ml-4" data-tip="git">
+            <CustomIcon
               width="56px"
               height="64px"
-              data-tip="archlinux"
+              iconName="git"
+              className="git"
+            />
+          </li>
+          <li className="list-inline-item ml-4" data-tip="npm">
+            <CustomIcon iconName="npm" className="fa-4x skill text-danger" />
+          </li>
+          <li className="list-inline-item ml-4 align-top" data-tip="archlinux">
+            <CustomIcon
+              width="56px"
+              height="64px"
+              iconName="archlinux"
               className="archlinux"
             />
           </li>

@@ -3,6 +3,7 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Interests from "./Interests";
+import CustomIcon from "./Icons";
 import {
   Nav,
   NavItem,
@@ -14,8 +15,6 @@ import {
 } from "reactstrap";
 import { CSSTransition } from "react-transition-group";
 import Switch from "react-switch";
-import sunIcon from "../logo/sun.svg";
-import moonIcon from "../logo/moon.svg";
 import { ThemeDispatch } from "../reducer";
 
 const ThemeSwitch = ({ theme, toggleTheme, className }) => {
@@ -26,8 +25,10 @@ const ThemeSwitch = ({ theme, toggleTheme, className }) => {
       onColor="#222"
       offColor="#333"
       className={className}
-      checkedIcon={<img src={moonIcon} alt="moon icon" />}
-      uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
+      checkedIcon={<CustomIcon iconName="moon" className="align-self-center" />}
+      uncheckedIcon={
+        <CustomIcon iconName="sun" className="align-self-center" />
+      }
       boxShadow="0 0 2px 3px #B38CD9"
       activeBoxShadow="0 0 2px 3px #dfb3e6"
     />

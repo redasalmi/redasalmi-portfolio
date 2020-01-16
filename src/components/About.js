@@ -1,4 +1,5 @@
 import React from "react";
+import CustomIcon from "./Icons";
 
 const About = () => {
   const myAge = new Date().getFullYear() - 1992;
@@ -10,10 +11,8 @@ const About = () => {
           <h4>Web Developer (react JS) at Buileo</h4>
           <h5>{myAge} years old</h5>
           <h5>
-            <span className="fas fa-map-marker-alt text-info">
-              {" "}
-              Algiers, Algeria
-            </span>
+            <CustomIcon iconName="mapMarked" className="text-info" />
+            <span className="text-info"> Algiers, Algeria</span>
           </h5>
         </div>
 
@@ -43,7 +42,10 @@ const About = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="fab fa-linkedin fa-3x contact text-info"></span>
+                <CustomIcon
+                  iconName="linkedin"
+                  className="fa-3x contact text-info"
+                />
               </a>
             </li>
             <li className="list-inline-item ml-4">
@@ -52,7 +54,10 @@ const About = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="fab fa-twitter fa-3x contact text-info"></span>
+                <CustomIcon
+                  iconName="twitter"
+                  className="fa-3x contact text-info"
+                />
               </a>
             </li>
             <li className="list-inline-item ml-4 mt-4 mt-md-2">
@@ -61,7 +66,10 @@ const About = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="fab fa-github fa-3x contact text-info"></span>
+                <CustomIcon
+                  iconName="github"
+                  className="fa-3x contact text-info"
+                />
               </a>
             </li>
             <li className="list-inline-item ml-4 mt-4  mt-md-2">
@@ -70,7 +78,10 @@ const About = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <span className="fas fa-envelope fa-3x contact text-info"></span>
+                <CustomIcon
+                  iconName="envelope"
+                  className="fa-3x contact text-info"
+                />
               </a>
             </li>
           </ul>
