@@ -8,17 +8,19 @@
     "@iconify/icons-fa-brands": "^1.0.9",
     "@iconify/icons-fa-solid": "^1.0.6",
     "@iconify/icons-logos": "^1.0.9",
-    "@iconify/icons-simple-icons": "^1.0.20",
+    "@iconify/icons-simple-icons": "^1.0.21",
     "@iconify/react": "^1.1.1",
     "bootstrap": "^4.3.1",
-    "node-sass": "^4.13.0",
+    "i18next": "^19.0.3",
+    "node-sass": "^4.13.1",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
+    "react-i18next": "^11.3.1",
     "react-scripts": "^3.3.0",
     "react-switch": "^5.0.1",
     "react-tooltip": "^3.11.2",
     "react-transition-group": "^4.3.0",
-    "reactstrap": "^8.3.1"
+    "reactstrap": "^8.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
