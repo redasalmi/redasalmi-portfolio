@@ -24,6 +24,7 @@ import gitIcon from "@iconify/icons-simple-icons/git";
 import bowIcon from "@iconify/icons-emojione-monotone/bow-and-arrow";
 import moonIcon from "@iconify/icons-emojione-monotone/crescent-moon";
 import sunIcon from "@iconify/icons-emojione-monotone/sun";
+import languageIcon from "@iconify/icons-ion/language";
 
 const CustomIcon = ({ iconName, className, width = "", height = "" }) => {
   if (iconName === "linkedin") {
@@ -139,6 +140,10 @@ const CustomIcon = ({ iconName, className, width = "", height = "" }) => {
     return <InlineIcon icon={moonIcon} className={className} color="yellow" />;
   } else if (iconName === "sun") {
     return <InlineIcon icon={sunIcon} className={className} color="yellow" />;
+  } else if (iconName === "language") {
+    return (
+      <InlineIcon icon={languageIcon} className={className} color="white" />
+    );
   }
 };
 

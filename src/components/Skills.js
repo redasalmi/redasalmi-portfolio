@@ -2,13 +2,13 @@ import React from "react";
 import ReactTooltip from "react-tooltip";
 import CustomIcon from "./Icons";
 
-const Skills = () => {
+const Skills = ({ translate }) => {
   return (
     <div className="row mt-md-5">
-      <h1 className="col-12 text-primary">Skills</h1>
+      <h1 className="col-12 text-primary">{translate("skills title")}</h1>
 
       <div className="col-12 col-md-6">
-        <p className="col-12 lead mt-2">Programming skills:</p>
+        <p className="col-12 lead mt-2">{translate("programming skills")}</p>
         <ul className="list-inline text-center text-md-left">
           <li className="list-inline-item ml-4" data-tip="HTML">
             <CustomIcon iconName="html5" className="fa-4x skill text-danger" />
@@ -32,7 +32,7 @@ const Skills = () => {
           </li>
         </ul>
 
-        <p className="col-12 lead mt-2">Libraries:</p>
+        <p className="col-12 lead mt-2">{translate("libraries title")}</p>
         <ul className="list-inline text-center text-md-left">
           <li className="list-inline-item ml-4 align-top" data-tip="bootstrap">
             <CustomIcon
@@ -63,7 +63,7 @@ const Skills = () => {
           </li>
         </ul>
 
-        <p className="col-12 lead mt-2">Database:</p>
+        <p className="col-12 lead mt-2">{translate("database title")}</p>
         <ul className="list-inline text-center text-md-left">
           <li className="list-inline-item ml-4 align-top" data-tip="mysql">
             <CustomIcon
@@ -83,7 +83,7 @@ const Skills = () => {
           </li>
         </ul>
 
-        <p className="col-12 lead mt-2">Tools & other:</p>
+        <p className="col-12 lead mt-2">{translate("Tools & other")}</p>
         <ul className="list-inline text-center text-md-left">
           <li className="list-inline-item ml-4" data-tip="git">
             <CustomIcon
@@ -108,7 +108,7 @@ const Skills = () => {
       </div>
 
       <div className="col-12 col-md-6">
-        <p className="lead">One of my coursera certificates:</p>
+        <p className="lead">{translate("coursera certificate title")}</p>
         <figure>
           <img
             src="/react-certificate.jpg"
@@ -116,15 +116,16 @@ const Skills = () => {
             className="img-fluid border border-primary"
           />
           <figcaption>
-            Follow this link to
+            {translate("follow this link")}
             <a
               href="https://www.coursera.org/account/accomplishments/specialization/ZQ2QJJBBK28R?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate"
               rel="noopener noreferrer"
               target="_blank"
             >
-              &nbsp;coursera&nbsp;
+              {" "}
+              {translate("coursera title")}{" "}
             </a>
-            to know more about this course.
+            {translate("know more about course")}
           </figcaption>
         </figure>
       </div>

@@ -1,40 +1,48 @@
 import React from "react";
 import CustomIcon from "./Icons";
 
-const About = () => {
+const About = ({ translate }) => {
   const myAge = new Date().getFullYear() - 1992;
   return (
     <div className="row mt-md-5">
       <div className="col-12 col-md-6 p-1 p-md-0">
         <div className="col-12">
-          <h1 className="text-primary">Reda Salmi</h1>
-          <h4>Web Developer (react JS) at Buileo</h4>
-          <h5>{myAge} years old</h5>
+          <h1 className="text-primary">{translate("reda salmi")}</h1>
+          <h4>{translate("job position")}</h4>
+          <h5>
+            {myAge} {translate("years unit")}
+          </h5>
           <h5>
             <CustomIcon iconName="mapMarked" className="text-info" />
-            <span className="text-info"> Algiers, Algeria</span>
+            <span className="text-info"> {translate("current position")}</span>
           </h5>
         </div>
 
         <div className="col-12 mt-5 lead">
           <p>
-            I am a web development and programming enthusiast. I am a self
-            taught programmer, I learned to program by doing courses on the
+            {translate("about me text1")}
             <span className="font-weight-bold text-primary">
               {" "}
-              Coursera
+              {translate("coursera title")}
             </span>{" "}
-            platform and tutorials on
-            <span className="font-weight-bold text-primary"> Youtube</span>, my
-            main programming languages are
-            <span className="font-weight-bold text-primary"> javascript </span>
-            for web development and{" "}
-            <span className="font-weight-bold text-primary">python </span>
-            for web and various scripting tasks. Also, I hold a master's degree
-            in Electrical Engineering.
+            {translate("about me text2")}
+            <span className="font-weight-bold text-primary">
+              {" "}
+              {translate("youtube title")}
+            </span>
+            {translate("about me text3")}
+            <span className="font-weight-bold text-primary">
+              {" "}
+              {translate("javascript title")}{" "}
+            </span>
+            {translate("about me text4")}{" "}
+            <span className="font-weight-bold text-primary">
+              {translate("python title")}{" "}
+            </span>
+            {translate("about me text5")}
           </p>
 
-          <p className="mt-5 mb-0">Find me here:</p>
+          <p className="mt-5 mb-0">{translate("find me here")}</p>
           <ul className="list-inline text-center">
             <li className="list-inline-item ml-4">
               <a
