@@ -1,6 +1,8 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import CustomIcon from "./Icons";
+import reactCertificate from "../assets/img/react-certificate.jpg";
+import ImageLoader from "./ImageLoader";
 
 const Skills = ({ translate }) => {
   return (
@@ -110,10 +112,11 @@ const Skills = ({ translate }) => {
       <div className="col-12 col-md-6">
         <p className="lead">{translate("coursera certificate title")}</p>
         <figure>
-          <img
-            src="/react-certificate.jpg"
-            alt="react certificate"
-            className="img-fluid border border-primary"
+          <ImageLoader
+            imgSrc={reactCertificate}
+            imgAlt="react certificate"
+            imgClass="img-fluid border border-primary"
+            loaderHeight={415}
           />
           <figcaption>
             {translate("follow this link")}

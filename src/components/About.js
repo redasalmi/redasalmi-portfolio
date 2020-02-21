@@ -1,5 +1,7 @@
 import React from "react";
 import CustomIcon from "./Icons";
+import redasPic from "../assets/img/reda-pic.jpg";
+import ImageLoader from "./ImageLoader";
 
 const About = ({ translate }) => {
   const myAge = new Date().getFullYear() - 1992;
@@ -96,8 +98,13 @@ const About = ({ translate }) => {
         </div>
       </div>
 
-      <div className="col-12 col-md-6 text-center text-md-right p-1 p-md-0">
-        <img src="/reda-pic.jpg" alt="reda" className="img-fluid" />
+      <div className="col-12 col-md-6 text-center p-1 p-md-0">
+        <ImageLoader
+          imgSrc={redasPic}
+          imgAlt="reda"
+          imgClass="img-fluid text-md-right"
+          loaderHeight={500}
+        />
       </div>
     </div>
   );

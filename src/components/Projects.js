@@ -7,6 +7,10 @@ import {
   CardSubtitle,
   CardFooter
 } from "reactstrap";
+import itbooks from "../assets/img/itbooks.png";
+import freeimages from "../assets/img/freeimages.jpg";
+import archery from "../assets/img/archery.jpg";
+import ImageLoader from "./ImageLoader";
 import CustomIcon from "./Icons";
 
 const ProjectCard = ({
@@ -21,7 +25,12 @@ const ProjectCard = ({
 }) => (
   <div className="col-12 col-md-6 col-lg-4">
     <Card className="m-auto" outline color="secondary">
-      <img height="300px" src={imgSrc} alt={imgAlt} />
+      <ImageLoader
+        imgSrc={imgSrc}
+        imgAlt={imgAlt}
+        imgHeight={300}
+        loaderHeight={300}
+      />
       <CardBody>
         <CardTitle className="text-center font-weight-bold">{title}</CardTitle>
         <CardSubtitle>
@@ -62,7 +71,7 @@ const Projects = ({ translate }) => {
       <div className="col-12 sm-text-center">
         <div className="row">
           <ProjectCard
-            imgSrc="./itbooks.png"
+            imgSrc={itbooks}
             imgAlt="it books website"
             title={translate("it books")}
             subtitle={translate("built with")}
@@ -73,7 +82,7 @@ const Projects = ({ translate }) => {
           />
 
           <ProjectCard
-            imgSrc="./freeimages.jpg"
+            imgSrc={freeimages}
             imgAlt="Free Images website"
             title={translate("free images")}
             subtitle={translate("built with")}
@@ -84,7 +93,7 @@ const Projects = ({ translate }) => {
           />
 
           <ProjectCard
-            imgSrc="./archery.jpg"
+            imgSrc={archery}
             imgAlt="Archery website"
             title={translate("archery project")}
             subtitle={translate("built with")}
