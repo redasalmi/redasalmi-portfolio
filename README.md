@@ -1,6 +1,6 @@
 # Reda Salmi Portfolio
 
-My personal Portfolio, presenting my projects and skills. found at: [https://redasalmi.netlify.com/](https://redasalmi.netlify.com/)
+My personal Portfolio, presenting my projects and skills. found at: [https://redasalmi.netlify.app](https://redasalmi.netlify.app)
 
 ## Built With
 
