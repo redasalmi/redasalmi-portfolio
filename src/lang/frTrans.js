@@ -15,7 +15,7 @@ export const FR_TRANS = {
   "languages btn": "Langages",
 
   // about section
-  "job position": "Développeur Web (react JS) chez Buileo",
+  "job position": "Développeur Web (react JS) chez Emploipartner",
   "years unit": "ans",
   "current position": "Alger, Algerie",
   "about me text1": `Je suis un passionné de développement web et de programmation. 
@@ -49,7 +49,6 @@ export const FR_TRANS = {
   "skills title": "Compétences",
   "programming skills": "Compétences en Programmation :",
   "libraries title": "Librairies :",
-  "database title": "Base de Donnée :",
   "Tools & other": "Outils et Autres :",
   "coursera certificate title": "Un de mes certificats coursera :",
   "follow this link": "Suivez ce lien vers ",
@@ -70,5 +69,5 @@ export const FR_TRANS = {
   "pc building": "Montage PC et Jeux Vidéos :",
   "pc building text": `Ayant un grand intérêt pour les nouvelles technologies, je suis 
   les dernières tendances en matière de montage de PC, j'ai également monté mon ordinateur 
-  de bureau moi-même. Je suis gamer depuis la nuit des temps et j'adore ça.`
+  de bureau moi-même. Je suis gamer depuis la nuit des temps et j'adore ça.`,
 };

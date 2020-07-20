@@ -5,13 +5,13 @@ import {
   CardBody,
   CardTitle,
   CardSubtitle,
-  CardFooter
+  CardFooter,
 } from "reactstrap";
 import itbooks from "../assets/img/itbooks.png";
 import freeimages from "../assets/img/freeimages.jpg";
 import archery from "../assets/img/archery.jpg";
 import ImageLoader from "./ImageLoader";
-import CustomIcon from "./Icons";
+import { GithubSVG, EyeSVG } from "../assets/svg";
 
 const ProjectCard = ({
   imgSrc,
@@ -21,7 +21,7 @@ const ProjectCard = ({
   subtitleTech,
   text,
   githubLink,
-  websiteLink
+  websiteLink,
 }) => (
   <div className="col-12 col-md-6 col-lg-4">
     <Card className="m-auto" outline color="secondary">
@@ -41,10 +41,7 @@ const ProjectCard = ({
       </CardBody>
       <CardFooter className="text-center">
         <a href={githubLink} rel="noopener noreferrer" target="_blank">
-          <CustomIcon
-            iconName="github"
-            className="fa-3x contact project text-info"
-          />
+          <GithubSVG width="45" height="50" className="github-svg-icon" />
         </a>
         <a
           href={websiteLink}
@@ -52,10 +49,7 @@ const ProjectCard = ({
           target="_blank"
           className="ml-4"
         >
-          <CustomIcon
-            iconName="eye"
-            className="fa-3x contact project text-info"
-          />
+          <EyeSVG width="50" height="50" className="eye-svg-icon" />
         </a>
       </CardFooter>
     </Card>

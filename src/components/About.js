@@ -1,13 +1,22 @@
-import React from "react";
-import CustomIcon from "./Icons";
+import React, { useContext } from "react";
 import redasPic from "../assets/img/reda-pic.jpg";
 import ImageLoader from "./ImageLoader";
+import {
+  mapMarker,
+  linkedin,
+  twitter,
+  github,
+  githubWhite,
+  mail,
+} from "../assets/svg";
+import { ThemeDispatch } from "../reducer";
 
 const About = ({ translate }) => {
+  const { theme } = useContext(ThemeDispatch);
   const myAge = new Date().getFullYear() - 1992;
   return (
     <div className="row mt-md-5">
-      <div className="col-12 col-md-6 p-1 p-md-0">
+      <div className="col-12 col-lg-6 p-1 p-md-0">
         <div className="col-12">
           <h1 className="text-primary">{translate("reda salmi")}</h1>
           <h4>{translate("job position")}</h4>
@@ -15,7 +24,7 @@ const About = ({ translate }) => {
             {myAge} {translate("years unit")}
           </h5>
           <h5>
-            <CustomIcon iconName="mapMarked" className="text-info" />
+            <img src={mapMarker} width="25" alt="map marker" />
             <span className="text-info"> {translate("current position")}</span>
           </h5>
         </div>
@@ -52,10 +61,7 @@ const About = ({ translate }) => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <CustomIcon
-                  iconName="linkedin"
-                  className="fa-3x contact text-info"
-                />
+                <img src={linkedin} width="60" alt="linkedin account" />
               </a>
             </li>
             <li className="list-inline-item ml-4">
@@ -64,10 +70,7 @@ const About = ({ translate }) => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <CustomIcon
-                  iconName="twitter"
-                  className="fa-3x contact text-info"
-                />
+                <img src={twitter} width="60" alt="twitter account" />
               </a>
             </li>
             <li className="list-inline-item ml-4 mt-4 mt-md-2">
@@ -76,9 +79,10 @@ const About = ({ translate }) => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <CustomIcon
-                  iconName="github"
-                  className="fa-3x contact text-info"
+                <img
+                  src={theme.theme === "dark" ? githubWhite : github}
+                  width="60"
+                  alt="github account"
                 />
               </a>
             </li>
@@ -88,17 +92,14 @@ const About = ({ translate }) => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <CustomIcon
-                  iconName="envelope"
-                  className="fa-3x contact text-info"
-                />
+                <img src={mail} width="60" alt="mail account" />
               </a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div className="col-12 col-md-6 text-center p-1 p-md-0">
+      <div className="col-12 col-lg-6 text-center p-3 p-sm-1 p-md-0">
         <ImageLoader
           imgSrc={redasPic}
           imgAlt="reda"

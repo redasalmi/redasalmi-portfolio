@@ -15,7 +15,7 @@ export const EN_TRANS = {
   "languages btn": "Languages",
 
   // about section
-  "job position": "Web Developer (react JS) at Buileo",
+  "job position": "Web Developer (react JS) at Emploipartner",
   "years unit": "years old",
   "current position": "Algiers, Algeria",
   "about me text1": `I am a web development and programming enthusiast.
@@ -47,7 +47,6 @@ export const EN_TRANS = {
   "skills title": "Skills",
   "programming skills": "Programming Skills:",
   "libraries title": "Libraries:",
-  "database title": "Database:",
   "Tools & other": "Tools & Others:",
   "coursera certificate title": "One of my coursera certificates:",
   "follow this link": "Follow this link to",
@@ -69,5 +68,5 @@ export const EN_TRANS = {
   "pc building": "PC Building & Video Games:",
   "pc building text": `Having a big interest in technology, I follow latest PC 
   part launches and building tendencies, also I've built my desktop computer 
-  myself. I've been a gamer since the dawn of time and I am loving it.`
+  myself. I've been a gamer since the dawn of time and I am loving it.`,
 };

@@ -54,17 +54,6 @@ $orange-color: #bd5d38;
   margin-top: 20px !important;
 }
 
-svg:hover.python path,
-svg:hover.bootstrap path:first-child,
-svg:hover.redux path,
-svg:hover.flask path,
-svg:hover.mysql path,
-svg:hover.mongodb path,
-svg:hover.git path,
-svg:hover.archlinux path {
-  fill: $orange-color;
-}
-
 a:hover {
   text-decoration: none;
   color: $orange-color;
@@ -107,4 +96,27 @@ a:hover {
   .flask path {
     fill: $white-color;
   }
+}
+
+.list-inline-item {
+  p {
+    font-weight: bold;
+  }
+}
+
+.github-svg-icon,
+.eye-svg-icon {
+  path {
+    fill: #17a2b8;
+  }
+
+  &:hover {
+    path {
+      fill: $orange-color;
+    }
+  }
+}
+
+.language-svg-icon path {
+  fill: #ffffff;
 }

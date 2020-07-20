@@ -4,7 +4,6 @@ import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Interests from "./Interests";
-import CustomIcon from "./Icons";
 import {
   Nav,
   NavItem,
@@ -21,6 +20,7 @@ import {
 import { CSSTransition } from "react-transition-group";
 import Switch from "react-switch";
 import { ThemeDispatch } from "../reducer";
+import { Language, Moon, Sun } from "../assets/svg";
 
 const SectionsNav = ({
   translate,
@@ -88,7 +88,7 @@ const LangDropdown = ({
       style={{ cursor: "pointer" }}
     >
       <DropdownToggle caret tag="span">
-        <CustomIcon iconName="language" />{" "}
+        <Language width="20" height="20" className="language-svg-icon" />{" "}
         <span>{translate("languages btn")}</span>
       </DropdownToggle>
       <DropdownMenu>
@@ -123,9 +123,11 @@ const ThemeSwitch = ({ theme, toggleTheme, className }) => {
       onColor="#222"
       offColor="#333"
       className={className}
-      checkedIcon={<CustomIcon iconName="moon" className="align-self-center" />}
+      checkedIcon={
+        <Moon width="20" height="20" className="align-self-center" />
+      }
       uncheckedIcon={
-        <CustomIcon iconName="sun" className="align-self-center" />
+        <Sun width="20" height="20" className="align-self-center" />
       }
       boxShadow="0 0 2px 3px #B38CD9"
       activeBoxShadow="0 0 2px 3px #dfb3e6"

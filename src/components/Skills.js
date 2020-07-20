@@ -1,115 +1,108 @@
-import React from "react";
-import ReactTooltip from "react-tooltip";
-import CustomIcon from "./Icons";
+import React, { useContext } from "react";
 import reactCertificate from "../assets/img/react-certificate.jpg";
 import ImageLoader from "./ImageLoader";
+import {
+  archlinux,
+  html,
+  css,
+  javascript,
+  python,
+  sass,
+  bootstrap,
+  react,
+  redux,
+  flask,
+  express,
+  expressWhite,
+  git,
+  npm,
+  flaskWhite,
+} from "../assets/svg";
+import { ThemeDispatch } from "../reducer";
 
 const Skills = ({ translate }) => {
+  const { theme } = useContext(ThemeDispatch);
   return (
     <div className="row mt-md-5">
       <h1 className="col-12 text-primary">{translate("skills title")}</h1>
 
-      <div className="col-12 col-md-6">
+      <div className="col-12 col-lg-6">
         <p className="col-12 lead mt-2">{translate("programming skills")}</p>
-        <ul className="list-inline text-center text-md-left">
-          <li className="list-inline-item ml-4" data-tip="HTML">
-            <CustomIcon iconName="html5" className="fa-4x skill text-danger" />
+        <ul className="list-inline text-center text-lg-left">
+          <li className="list-inline-item text-center ml-4">
+            <img src={html} width="50" height="65" alt="html5" />
+            <p>HTML5</p>
           </li>
-          <li className="list-inline-item ml-4" data-tip="CSS">
-            <CustomIcon iconName="css3" className="fa-4x skill text-primary" />
+          <li className="list-inline-item text-center ml-4">
+            <img src={css} width="50" height="65" alt="css" />
+            <p>CSS3</p>
           </li>
-          <li className="list-inline-item ml-4" data-tip="javascript">
-            <CustomIcon
-              iconName="javascript"
-              className="fa-4x skill text-warning"
-            />
+          <li className="list-inline-item text-center ml-4">
+            <img src={javascript} width="50" height="65" alt="javascript" />
+            <p>Javascript</p>
           </li>
-          <li className="list-inline-item ml-4 align-top" data-tip="python">
-            <CustomIcon
-              width="56px"
-              height="64px"
-              iconName="python"
-              className="python"
-            />
+          <li className="list-inline-item text-center ml-4 align-top">
+            <img src={python} width="50" height="65" alt="python" />
+            <p>Python</p>
           </li>
         </ul>
 
         <p className="col-12 lead mt-2">{translate("libraries title")}</p>
-        <ul className="list-inline text-center text-md-left">
-          <li className="list-inline-item ml-4 align-top" data-tip="bootstrap">
-            <CustomIcon
-              width="56px"
-              height="64px"
-              iconName="bootstrap"
-              className="bootstrap"
-            />
+        <ul className="list-inline text-center text-lg-left">
+          <li className="list-inline-item text-center ml-4 align-top">
+            <img src={sass} width="50" height="65" alt="sass" />
+            <p>SASS</p>
           </li>
-          <li className="list-inline-item ml-4" data-tip="react">
-            <CustomIcon iconName="react" className="fa-4x skill text-info" />
+          <li className="list-inline-item text-center ml-4 align-top">
+            <img src={bootstrap} width="50" height="65" alt="bootstrap" />
+            <p>Bootstrap</p>
           </li>
-          <li className="list-inline-item ml-4 align-top" data-tip="redux">
-            <CustomIcon
-              width="56px"
-              height="64px"
-              iconName="redux"
-              className="redux"
-            />
+          <li className="list-inline-item text-center ml-4">
+            <img src={react} width="50" height="65" alt="react" />
+            <p>React</p>
           </li>
-          <li className="list-inline-item ml-4 align-top" data-tip="flask">
-            <CustomIcon
-              width="56px"
-              height="64px"
-              iconName="flask"
-              className="flask"
-            />
+          <li className="list-inline-item text-center ml-4 align-top">
+            <img src={redux} width="50" height="65" alt="redux" />
+            <p>Redux</p>
           </li>
-        </ul>
-
-        <p className="col-12 lead mt-2">{translate("database title")}</p>
-        <ul className="list-inline text-center text-md-left">
-          <li className="list-inline-item ml-4 align-top" data-tip="mysql">
-            <CustomIcon
-              width="56px"
-              height="64px"
-              iconName="mysql"
-              className="mysql"
+          <li className="list-inline-item text-center ml-4 align-top">
+            <img
+              src={theme.theme === "dark" ? flaskWhite : flask}
+              width="50"
+              height="65"
+              alt="flask"
             />
+            <p>Flask</p>
           </li>
-          <li className="list-inline-item ml-4 align-top" data-tip="mongodb">
-            <CustomIcon
-              width="56px"
-              height="64px"
-              iconName="mongodb"
-              className="mongodb"
+          <li className="list-inline-item text-center ml-4 align-top">
+            <img
+              src={theme.theme === "dark" ? expressWhite : express}
+              width="50"
+              height="65"
+              alt="exrpessjs"
             />
+            <p>ExpressJs</p>
           </li>
         </ul>
 
         <p className="col-12 lead mt-2">{translate("Tools & other")}</p>
-        <ul className="list-inline text-center text-md-left">
-          <li className="list-inline-item ml-4" data-tip="git">
-            <CustomIcon
-              width="56px"
-              height="64px"
-              iconName="git"
-              className="git"
-            />
+        <ul className="list-inline text-center text-lg-left">
+          <li className="list-inline-item text-center ml-4">
+            <img src={git} width="50" height="65" alt="git" />
+            <p>Git</p>
           </li>
-          <li className="list-inline-item ml-4" data-tip="npm">
-            <CustomIcon iconName="npm" className="fa-4x skill text-danger" />
+          <li className="list-inline-item text-center ml-4">
+            <img src={npm} width="50" height="65" alt="npm" />
+            <p>NPM</p>
           </li>
-          <li className="list-inline-item ml-4 align-top" data-tip="archlinux">
-            <CustomIcon
-              width="56px"
-              height="64px"
-              iconName="archlinux"
-              className="archlinux"
-            />
+          <li className="list-inline-item text-center ml-4 align-top">
+            <img src={archlinux} width="50" height="65" alt="archlinux" />
+            <p>Archlinux</p>
           </li>
         </ul>
       </div>
 
-      <div className="col-12 col-md-6">
+      <div className="col-12 col-lg-6">
         <p className="lead">{translate("coursera certificate title")}</p>
         <figure>
           <ImageLoader
@@ -132,8 +125,6 @@ const Skills = ({ translate }) => {
           </figcaption>
         </figure>
       </div>
-
-      <ReactTooltip place="bottom" type="info" />
     </div>
   );
 };
