@@ -1,6 +1,8 @@
 import React from "react";
 
-const initialState = { theme: "light" };
+const initialState = {
+  theme: localStorage.getItem("theme") ?? "light",
+};
 
 const ThemeDispatch = React.createContext(null);
 const reducer = (state, action) => {

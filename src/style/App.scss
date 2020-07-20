@@ -70,11 +70,6 @@ a:hover {
   color: $orange-color;
 }
 
-.light,
-.dark {
-  transition: color 0.3s, background-color 0.5s;
-}
-
 .light {
   background-color: $white-color;
   color: $black-color;

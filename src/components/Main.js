@@ -16,7 +16,7 @@ import {
   ButtonDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
 } from "reactstrap";
 import { CSSTransition } from "react-transition-group";
 import Switch from "react-switch";
@@ -28,31 +28,31 @@ const SectionsNav = ({
   setShowComponent,
   setnavTogglerOpen,
   isLinkActive,
-  setIsLinkActive
+  setIsLinkActive,
 }) => {
   const sections = [
     {
       sectionName: translate("about section"),
       component: <About translate={translate} />,
-      id: "about"
+      id: "about",
     },
     {
       sectionName: translate("projects section"),
       component: <Projects translate={translate} />,
-      id: "projects"
+      id: "projects",
     },
     {
       sectionName: translate("skills section"),
       component: <Skills translate={translate} />,
-      id: "skills"
+      id: "skills",
     },
     {
       sectionName: translate("interests section"),
       component: <Interests translate={translate} />,
-      id: "interests"
-    }
+      id: "interests",
+    },
   ];
-  return sections.map(section => (
+  return sections.map((section) => (
     <NavItem className="ml-3" key={section.id}>
       <NavLink
         id={section.id}
@@ -78,7 +78,7 @@ const LangDropdown = ({
   toggleLngDropdown,
   textColor,
   translate,
-  i18n
+  i18n,
 }) => {
   return (
     <ButtonDropdown
@@ -94,13 +94,19 @@ const LangDropdown = ({
       <DropdownMenu>
         <DropdownItem
           active={i18n.language === "en"}
-          onClick={() => i18n.changeLanguage("en")}
+          onClick={() => {
+            localStorage.setItem("lng", "en");
+            i18n.changeLanguage("en");
+          }}
         >
           {translate("lng english")}
         </DropdownItem>
         <DropdownItem
           active={i18n.language === "fr"}
-          onClick={() => i18n.changeLanguage("fr")}
+          onClick={() => {
+            localStorage.setItem("lng", "fr");
+            i18n.changeLanguage("fr");
+          }}
         >
           {translate("lng french")}
         </DropdownItem>
@@ -144,8 +150,10 @@ const Main = () => {
   const { theme, dispatch } = useContext(ThemeDispatch);
   const toggleTheme = () => {
     if (theme.theme === "light") {
+      localStorage.setItem("theme", "dark");
       dispatch({ type: "dark" });
     } else {
+      localStorage.setItem("theme", "light");
       dispatch({ type: "light" });
     }
   };

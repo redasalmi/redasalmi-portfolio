@@ -5,20 +5,20 @@ import { FR_TRANS } from "./frTrans";
 
 const resources = {
   en: {
-    translation: EN_TRANS
+    translation: EN_TRANS,
   },
   fr: {
-    translation: FR_TRANS
-  }
+    translation: FR_TRANS,
+  },
 };
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en",
+  lng: localStorage.getItem("lng") ?? "en",
   keySeparator: false,
   interpolation: {
-    escapeValue: false
-  }
+    escapeValue: false,
+  },
 });
 
 export default i18n;
