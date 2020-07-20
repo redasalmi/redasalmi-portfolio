@@ -72,7 +72,7 @@ const Projects = ({ translate }) => {
             subtitleTech={translate("react js")}
             text={translate("it books text")}
             githubLink="https://github.com/redasalmi/it-books"
-            websiteLink="https://itbooks.netlify.com/"
+            websiteLink="https://itbooks.netlify.app/"
           />
 
           <ProjectCard
@@ -83,7 +83,7 @@ const Projects = ({ translate }) => {
             subtitleTech={translate("react js")}
             text={translate("free images text")}
             githubLink="https://github.com/redasalmi/free-images"
-            websiteLink="https://freeimg.netlify.com/"
+            websiteLink="https://freeimg.netlify.app/"
           />
 
           <ProjectCard
@@ -94,7 +94,7 @@ const Projects = ({ translate }) => {
             subtitleTech={translate("react js")}
             text={translate("archery project text")}
             githubLink="https://github.com/redasalmi/archery"
-            websiteLink="https://archerie.netlify.com/"
+            websiteLink="https://archerie.netlify.app/"
           />
         </div>
       </div>
