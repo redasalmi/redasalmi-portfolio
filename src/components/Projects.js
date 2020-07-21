@@ -30,6 +30,7 @@ const ProjectCard = ({
         imgAlt={imgAlt}
         imgHeight={300}
         loaderHeight={300}
+        spinnerColor="dark"
       />
       <CardBody>
         <CardTitle className="text-center font-weight-bold">{title}</CardTitle>

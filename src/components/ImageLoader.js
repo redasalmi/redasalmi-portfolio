@@ -7,7 +7,8 @@ const ImageLoader = ({
   imgAlt,
   imgHeight = "",
   imgClass = "",
-  loaderHeight
+  loaderHeight,
+  spinnerColor = null
 }) => {
   return (
     <Img
@@ -21,7 +22,7 @@ const ImageLoader = ({
           className="d-flex flex-column align-items-center justify-content-center"
         >
           <p>Loading Image...</p>
-          <Spinner />
+          <Spinner color={spinnerColor} />
         </div>
       }
       unloader={
