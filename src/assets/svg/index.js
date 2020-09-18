@@ -1,4 +1,3 @@
-import archlinux from "./archlinux.svg";
 import bootstrap from "./bootstrap.svg";
 import bow from "./bow.svg";
 import code from "./code.svg";
@@ -15,7 +14,7 @@ import html from "./html.svg";
 import javascript from "./javascript.svg";
 import linkedin from "./linkedin.svg";
 import mail from "./mail.svg";
-import mapMarker from "./mapMarker.svg";
+import { ReactComponent as MapMarker } from "./mapMarker.svg";
 import npm from "./npm.svg";
 import python from "./python.svg";
 import react from "./react.svg";
@@ -29,7 +28,6 @@ import { ReactComponent as GithubSVG } from "./github.svg";
 import { ReactComponent as EyeSVG } from "./eye.svg";
 
 export {
-  archlinux,
   bootstrap,
   bow,
   code,
@@ -46,7 +44,7 @@ export {
   javascript,
   linkedin,
   mail,
-  mapMarker,
+  MapMarker,
   npm,
   python,
   react,

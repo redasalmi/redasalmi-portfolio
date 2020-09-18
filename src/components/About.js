@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import redasPic from "../assets/img/reda-pic.jpg";
+import redasPic from "../assets/img/reda-pic.webp";
 import ImageLoader from "./ImageLoader";
 import {
-  mapMarker,
+  MapMarker,
   linkedin,
   twitter,
   github,
@@ -23,9 +23,12 @@ const About = ({ translate }) => {
           <h5>
             {myAge} {translate("years unit")}
           </h5>
-          <h5>
-            <img src={mapMarker} width="25" alt="map marker" />
-            <span className="text-info"> {translate("current position")}</span>
+          <h5 className="font-weight-bold">
+            <MapMarker className="text-primary svg" width="25" />
+            <span className="text-primary">
+              {" "}
+              {translate("current position")}
+            </span>
           </h5>
         </div>
 

@@ -15,7 +15,7 @@ export const FR_TRANS = {
   "languages btn": "Langages",
 
   // about section
-  "job position": "Développeur Web (react JS) chez Emploipartner",
+  "job position": "Développeur Web",
   "years unit": "ans",
   "current position": "Alger, Algerie",
   "about me text1": `Je suis un passionné de développement web et de programmation. 
@@ -30,20 +30,21 @@ export const FR_TRANS = {
 
   // projects section
   "projects title": "Projets",
-  "projects intro text": `Ici vous pouvez trouver tous mes projets personnels, cliquez sur 
+  "projects intro text": `Ici vous pouvez trouver tous mes projets personnels et professionnels, cliquez sur 
   l'icône github pour afficher le code du projet sélectionné, ou cliquez sur 
   l'icône visionnée pour visiter le site Web du projet sélectionné.`,
   "built with": "Réalisé avec",
   "react js": "react JS",
+  "professional project": "Projet professionnel",
   "it books": "IT Books",
   "it books text":
     "Site Web proposant des livres sur l'informatique et la programmation.",
   "free images": "Free Images",
   "free images text":
     "Un site Internet pour trouver des images gratuites et les télécharger.",
-  "archery project": "Archery",
-  "archery project text":
-    "Un site Web sur le tir à l'arc avec des définitions, des articles et des vidéos.",
+  "khedemni project": "Khedemni",
+  "khedemni project text":
+    "Un site de recrutement spécialisé dans l’hôtellerie et la restauration.",
 
   // skills section
   "skills title": "Compétences",

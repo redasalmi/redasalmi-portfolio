@@ -29,7 +29,7 @@ $orange-color: #bd5d38;
 
 .navbar-brand,
 .nav-link {
-  color: #f08080 !important;
+  color: #e68a8a !important;
   cursor: pointer;
 }
 
@@ -64,6 +64,12 @@ a:hover {
   color: $black-color;
 }
 
+.text-primary.svg {
+  path {
+    fill: #007bff;
+  }
+}
+
 .dark {
   background-color: $black-color;
   color: $white-color;
@@ -77,6 +83,12 @@ a:hover {
 
   .text-primary {
     color: $orange-color !important;
+
+    &.svg {
+      path {
+        fill: $orange-color !important;
+      }
+    }
   }
 
   .card-title,

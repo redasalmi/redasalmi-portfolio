@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import reactCertificate from "../assets/img/react-certificate.jpg";
+import reactCertificate from "../assets/img/react-certificate.webp";
 import ImageLoader from "./ImageLoader";
 import {
-  archlinux,
   html,
   css,
   javascript,
@@ -94,10 +93,6 @@ const Skills = ({ translate }) => {
           <li className="list-inline-item text-center ml-4">
             <img src={npm} width="50" height="65" alt="npm" />
             <p>NPM</p>
-          </li>
-          <li className="list-inline-item text-center ml-4 align-top">
-            <img src={archlinux} width="50" height="65" alt="archlinux" />
-            <p>Archlinux</p>
           </li>
         </ul>
       </div>

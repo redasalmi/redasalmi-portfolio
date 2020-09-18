@@ -15,7 +15,7 @@ export const EN_TRANS = {
   "languages btn": "Languages",
 
   // about section
-  "job position": "Web Developer (react JS) at Emploipartner",
+  "job position": "Web Developer",
   "years unit": "years old",
   "current position": "Algiers, Algeria",
   "about me text1": `I am a web development and programming enthusiast.
@@ -30,18 +30,19 @@ export const EN_TRANS = {
 
   // projects section
   "projects title": "Projects",
-  "projects intro text": `Here you can see all my personal projects, click 
+  "projects intro text": `Here you can see all my personal and professional projects, click 
   on the github icon to view the selected project code, or click on 
   the view icon to visit the selected project website.`,
   "built with": "Built with",
   "react js": "react JS",
+  "professional project": "Professional Project",
   "it books": "IT Books",
   "it books text": "Website for IT, Programming and Computer Science Books.",
   "free images": "Free Images",
   "free images text": "A website to browse for free images and download them.",
-  "archery project": "Archery",
-  "archery project text":
-    "A website About Archery with definitions, articles and videos.",
+  "khedemni project": "Khedemni",
+  "khedemni project text":
+    "A recruitment website, specialized in hostelry and restoration jobs.",
 
   // skills section
   "skills title": "Skills",

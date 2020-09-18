@@ -7,9 +7,9 @@ import {
   CardSubtitle,
   CardFooter,
 } from "reactstrap";
-import itbooks from "../assets/img/itbooks.png";
-import freeimages from "../assets/img/freeimages.jpg";
-import archery from "../assets/img/archery.jpg";
+import itbooks from "../assets/img/itbooks.webp";
+import freeimages from "../assets/img/freeimages.webp";
+import khedemni from "../assets/img/khedemni.webp";
 import ImageLoader from "./ImageLoader";
 import { GithubSVG, EyeSVG } from "../assets/svg";
 
@@ -41,9 +41,11 @@ const ProjectCard = ({
         <CardText>{text}</CardText>
       </CardBody>
       <CardFooter className="text-center">
-        <a href={githubLink} rel="noopener noreferrer" target="_blank">
-          <GithubSVG width="45" height="50" className="github-svg-icon" />
-        </a>
+        {githubLink && (
+          <a href={githubLink} rel="noopener noreferrer" target="_blank">
+            <GithubSVG width="45" height="50" className="github-svg-icon" />
+          </a>
+        )}
         <a
           href={websiteLink}
           rel="noopener noreferrer"
@@ -88,14 +90,13 @@ const Projects = ({ translate }) => {
           />
 
           <ProjectCard
-            imgSrc={archery}
-            imgAlt="Archery website"
-            title={translate("archery project")}
-            subtitle={translate("built with")}
-            subtitleTech={translate("react js")}
-            text={translate("archery project text")}
-            githubLink="https://github.com/redasalmi/archery"
-            websiteLink="https://archerie.netlify.app/"
+            imgSrc={khedemni}
+            imgAlt="Khedemni website"
+            title={translate("khedemni project")}
+            subtitle=""
+            subtitleTech={translate("professional project")}
+            text={translate("khedemni project text")}
+            websiteLink="https://khedemni.com/"
           />
         </div>
       </div>

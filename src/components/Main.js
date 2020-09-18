@@ -120,6 +120,8 @@ const ThemeSwitch = ({ theme, toggleTheme, className }) => {
     <Switch
       onChange={toggleTheme}
       checked={theme.theme === "dark"}
+      aria-checked={theme.theme === "dark"}
+      aria-label="Toggle light/dark Theme"
       onColor="#222"
       offColor="#333"
       className={className}
