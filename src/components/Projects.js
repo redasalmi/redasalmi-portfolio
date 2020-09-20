@@ -7,10 +7,8 @@ import {
   CardSubtitle,
   CardFooter,
 } from "reactstrap";
-import itbooks from "../assets/img/itbooks.webp";
-import freeimages from "../assets/img/freeimages.webp";
-import khedemni from "../assets/img/khedemni.webp";
 import ImageLoader from "./ImageLoader";
+import { PROJECTS } from "../assets/data/project";
 import { GithubSVG, EyeSVG } from "../assets/svg";
 
 const ProjectCard = ({
@@ -24,7 +22,7 @@ const ProjectCard = ({
   websiteLink,
 }) => (
   <div className="col-12 col-md-6 col-lg-4">
-    <Card className="m-auto" outline color="secondary">
+    <Card className="project-card" outline color="secondary">
       <ImageLoader
         imgSrc={imgSrc}
         imgAlt={imgAlt}
@@ -67,37 +65,32 @@ const Projects = ({ translate }) => {
 
       <div className="col-12 sm-text-center">
         <div className="row">
-          <ProjectCard
-            imgSrc={itbooks}
-            imgAlt="it books website"
-            title={translate("it books")}
-            subtitle={translate("built with")}
-            subtitleTech={translate("react js")}
-            text={translate("it books text")}
-            githubLink="https://github.com/redasalmi/it-books"
-            websiteLink="https://itbooks.netlify.app/"
-          />
+          {PROJECTS.map((project) => {
+            const {
+              imgSrc,
+              imgAlt,
+              title,
+              subtitle,
+              subtitleTech,
+              text,
+              githubLink,
+              websiteLink,
+            } = project;
 
-          <ProjectCard
-            imgSrc={freeimages}
-            imgAlt="Free Images website"
-            title={translate("free images")}
-            subtitle={translate("built with")}
-            subtitleTech={translate("react js")}
-            text={translate("free images text")}
-            githubLink="https://github.com/redasalmi/free-images"
-            websiteLink="https://freeimg.netlify.app/"
-          />
-
-          <ProjectCard
-            imgSrc={khedemni}
-            imgAlt="Khedemni website"
-            title={translate("khedemni project")}
-            subtitle=""
-            subtitleTech={translate("professional project")}
-            text={translate("khedemni project text")}
-            websiteLink="https://khedemni.com/"
-          />
+            return (
+              <ProjectCard
+                key={translate(title)}
+                imgSrc={imgSrc}
+                imgAlt={imgAlt}
+                title={translate(title)}
+                subtitle={translate(subtitle)}
+                subtitleTech={translate(subtitleTech)}
+                text={translate(text)}
+                githubLink={githubLink}
+                websiteLink={websiteLink}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
