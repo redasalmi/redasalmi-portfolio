@@ -103,7 +103,7 @@ const About = ({ translate }) => {
 
       <div className="col-12 col-lg-6 text-center p-3 p-sm-1 p-md-0">
         <ImageLoader
-          imgSrc="/reda-pic.webp"
+          imgSrc="/reda-pic.jpg"
           imgAlt="reda"
           imgClass="img-fluid text-md-right"
           loaderHeight={500}
