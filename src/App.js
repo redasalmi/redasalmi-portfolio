@@ -1,6 +1,6 @@
-import React, { useReducer, useEffect } from "react";
-import { initialState, ThemeDispatch, reducer } from "./reducer";
-import Main from "./components/Main";
+import { useReducer, useEffect } from 'react';
+import { initialState, ThemeDispatch, reducer } from './reducer';
+import Main from './components/Main';
 
 function App() {
   const [theme, dispatch] = useReducer(reducer, initialState);
@@ -11,9 +11,9 @@ function App() {
       document.body.classList.remove(prevClass);
 
       // adding transition effect after theme initialization
-      const body = document.querySelector("body");
+      const body = document.querySelector('body');
       if (!body.style.transition) {
-        body.style.transition = "color 0.3s, background-color 0.5s";
+        body.style.transition = 'color 0.3s, background-color 0.5s';
       }
     }
     document.body.classList.add(theme.theme);

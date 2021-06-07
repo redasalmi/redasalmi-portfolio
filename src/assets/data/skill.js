@@ -13,32 +13,32 @@ import {
   expressWhite,
   git,
   npm,
-} from "../svg";
+} from '../svg';
 
 export const SKILLS = {
   programming: [
     {
       imgSrc: html,
-      imgAlt: "html",
-      skill: "HTML5",
+      imgAlt: 'html',
+      skill: 'HTML5',
       alignTop: false,
     },
     {
       imgSrc: css,
-      imgAlt: "css",
-      skill: "CSS3",
+      imgAlt: 'css',
+      skill: 'CSS3',
       alignTop: false,
     },
     {
       imgSrc: javascript,
-      imgAlt: "javascript",
-      skill: "JavaScript",
+      imgAlt: 'javascript',
+      skill: 'JavaScript',
       alignTop: false,
     },
     {
       imgSrc: python,
-      imgAlt: "python",
-      skill: "Python",
+      imgAlt: 'python',
+      skill: 'Python',
       alignTop: true,
     },
   ],
@@ -46,39 +46,39 @@ export const SKILLS = {
   librairies: [
     {
       imgSrc: sass,
-      imgAlt: "sass",
-      skill: "SASS",
+      imgAlt: 'sass',
+      skill: 'SASS',
       alignTop: true,
     },
     {
       imgSrc: bootstrap,
-      imgAlt: "bootstrap",
-      skill: "Bootstrap",
+      imgAlt: 'bootstrap',
+      skill: 'Bootstrap',
       alignTop: true,
     },
     {
       imgSrc: react,
-      imgAlt: "react",
-      skill: "React",
+      imgAlt: 'react',
+      skill: 'React',
       alignTop: false,
     },
     {
       imgSrc: redux,
-      imgAlt: "redux",
-      skill: "Redux",
+      imgAlt: 'redux',
+      skill: 'Redux',
       alignTop: true,
     },
     {
       imgSrc: flask,
-      imgAlt: "flask",
-      skill: "Flask",
+      imgAlt: 'flask',
+      skill: 'Flask',
       alignTop: true,
       whiteImgSrc: flaskWhite,
     },
     {
       imgSrc: express,
-      imgAlt: "express",
-      skill: "ExpressJS",
+      imgAlt: 'express',
+      skill: 'ExpressJS',
       alignTop: true,
       whiteImgSrc: expressWhite,
     },
@@ -87,14 +87,14 @@ export const SKILLS = {
   tools: [
     {
       imgSrc: git,
-      imgAlt: "git",
-      skill: "Git",
+      imgAlt: 'git',
+      skill: 'Git',
       alignTop: false,
     },
     {
       imgSrc: npm,
-      imgAlt: "npm",
-      skill: "NPM",
+      imgAlt: 'npm',
+      skill: 'NPM',
       alignTop: false,
     },
   ],

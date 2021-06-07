@@ -1,16 +1,17 @@
-import React from "react";
+import { createContext } from 'react';
 
 const initialState = {
-  theme: localStorage.getItem("theme") ?? "light",
+  theme: localStorage.getItem('theme') ?? 'light',
 };
 
-const ThemeDispatch = React.createContext(null);
+const ThemeDispatch = createContext(null);
+
 const reducer = (state, action) => {
   switch (action.type) {
-    case "light":
-      return { theme: "light" };
-    case "dark":
-      return { theme: "dark" };
+    case 'light':
+      return { theme: 'light' };
+    case 'dark':
+      return { theme: 'dark' };
     default:
       return state;
   }

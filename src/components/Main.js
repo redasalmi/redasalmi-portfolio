@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react";
-import { useTranslation } from "react-i18next";
-import About from "./About";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Interests from "./Interests";
+import { useState, useContext } from 'react';
+import { useTranslation } from 'react-i18next';
+import About from './About';
+import Skills from './Skills';
+import Projects from './Projects';
+import Interests from './Interests';
 import {
   Nav,
   NavItem,
@@ -16,11 +16,11 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-} from "reactstrap";
-import { CSSTransition } from "react-transition-group";
-import Switch from "react-switch";
-import { ThemeDispatch } from "../reducer";
-import { Language, Moon, Sun } from "../assets/svg";
+} from 'reactstrap';
+import { CSSTransition } from 'react-transition-group';
+import Switch from 'react-switch';
+import { ThemeDispatch } from '../reducer';
+import { Language, Moon, Sun } from '../assets/svg';
 
 const SectionsNav = ({
   translate,
@@ -32,28 +32,28 @@ const SectionsNav = ({
 }) => {
   const sections = [
     {
-      sectionName: translate("about section"),
+      sectionName: translate('about section'),
       component: <About translate={translate} />,
-      id: "about",
+      id: 'about',
     },
     {
-      sectionName: translate("projects section"),
+      sectionName: translate('projects section'),
       component: <Projects translate={translate} />,
-      id: "projects",
+      id: 'projects',
     },
     {
-      sectionName: translate("skills section"),
+      sectionName: translate('skills section'),
       component: <Skills translate={translate} />,
-      id: "skills",
+      id: 'skills',
     },
     {
-      sectionName: translate("interests section"),
+      sectionName: translate('interests section'),
       component: <Interests translate={translate} />,
-      id: "interests",
+      id: 'interests',
     },
   ];
   return sections.map((section) => (
-    <NavItem className="ml-3" key={section.id}>
+    <NavItem className='ml-3' key={section.id}>
       <NavLink
         id={section.id}
         onClick={() => {
@@ -65,7 +65,7 @@ const SectionsNav = ({
           setnavTogglerOpen(false);
           setIsLinkActive(section.id);
         }}
-        className={isLinkActive === section.id ? "active-link" : null}
+        className={isLinkActive === section.id ? 'active-link' : null}
       >
         {section.sectionName}
       </NavLink>
@@ -85,30 +85,30 @@ const LangDropdown = ({
       isOpen={lngDropdownOpen}
       toggle={toggleLngDropdown}
       className={`text-${textColor} p-1`}
-      style={{ cursor: "pointer" }}
+      style={{ cursor: 'pointer' }}
     >
-      <DropdownToggle caret tag="span">
-        <Language width="20" height="20" className="language-svg-icon" />{" "}
-        <span>{translate("languages btn")}</span>
+      <DropdownToggle caret tag='span'>
+        <Language width='20' height='20' className='language-svg-icon' />{' '}
+        <span>{translate('languages btn')}</span>
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem
-          active={i18n.language === "en"}
+          active={i18n.language === 'en'}
           onClick={() => {
-            localStorage.setItem("lng", "en");
-            i18n.changeLanguage("en");
+            localStorage.setItem('lng', 'en');
+            i18n.changeLanguage('en');
           }}
         >
-          {translate("lng english")}
+          {translate('lng english')}
         </DropdownItem>
         <DropdownItem
-          active={i18n.language === "fr"}
+          active={i18n.language === 'fr'}
           onClick={() => {
-            localStorage.setItem("lng", "fr");
-            i18n.changeLanguage("fr");
+            localStorage.setItem('lng', 'fr');
+            i18n.changeLanguage('fr');
           }}
         >
-          {translate("lng french")}
+          {translate('lng french')}
         </DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
@@ -119,20 +119,20 @@ const ThemeSwitch = ({ theme, toggleTheme, className }) => {
   return (
     <Switch
       onChange={toggleTheme}
-      checked={theme.theme === "dark"}
-      aria-checked={theme.theme === "dark"}
-      aria-label="Toggle light/dark Theme"
-      onColor="#222"
-      offColor="#333"
+      checked={theme.theme === 'dark'}
+      aria-checked={theme.theme === 'dark'}
+      aria-label='Toggle light/dark Theme'
+      onColor='#222'
+      offColor='#333'
       className={className}
       checkedIcon={
-        <Moon width="20" height="20" className="align-self-center" />
+        <Moon width='20' height='20' className='align-self-center' />
       }
       uncheckedIcon={
-        <Sun width="20" height="20" className="align-self-center" />
+        <Sun width='20' height='20' className='align-self-center' />
       }
-      boxShadow="0 0 2px 3px #B38CD9"
-      activeBoxShadow="0 0 2px 3px #dfb3e6"
+      boxShadow='0 0 2px 3px #B38CD9'
+      activeBoxShadow='0 0 2px 3px #dfb3e6'
     />
   );
 };
@@ -144,7 +144,7 @@ const Main = () => {
   const [showComponent, setShowComponent] = useState(true);
   // component variable set to the About component per default
   const [component, setComponent] = useState(<About translate={t} />);
-  const [isLinkActive, setIsLinkActive] = useState("about");
+  const [isLinkActive, setIsLinkActive] = useState('about');
   // NavbarToggler variable
   const [navTogglerOpen, setnavTogglerOpen] = useState(false);
   // language dropdown
@@ -153,23 +153,23 @@ const Main = () => {
   // theme toggle logic
   const { theme, dispatch } = useContext(ThemeDispatch);
   const toggleTheme = () => {
-    if (theme.theme === "light") {
-      localStorage.setItem("theme", "dark");
-      dispatch({ type: "dark" });
+    if (theme.theme === 'light') {
+      localStorage.setItem('theme', 'dark');
+      dispatch({ type: 'dark' });
     } else {
-      localStorage.setItem("theme", "light");
-      dispatch({ type: "light" });
+      localStorage.setItem('theme', 'light');
+      dispatch({ type: 'light' });
     }
   };
 
   return (
     <div>
-      <Navbar color="dark" dark expand="md">
-        <div className="container">
-          <NavbarBrand href="/">{t("reda salmi")}</NavbarBrand>
+      <Navbar color='dark' dark expand='md'>
+        <div className='container'>
+          <NavbarBrand href='/'>{t('reda salmi')}</NavbarBrand>
           <NavbarToggler onClick={() => setnavTogglerOpen(!navTogglerOpen)} />
           <Collapse isOpen={navTogglerOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className='ml-auto' navbar>
               <SectionsNav
                 translate={t}
                 setComponent={setComponent}
@@ -183,30 +183,30 @@ const Main = () => {
         </div>
       </Navbar>
 
-      <div style={{ backgroundColor: "#4C515D" }}>
-        <div className="container p-1 pr-4 pl-4">
-          <div className="row">
+      <div style={{ backgroundColor: '#4C515D' }}>
+        <div className='container p-1 pr-4 pl-4'>
+          <div className='row'>
             <LangDropdown
               lngDropdownOpen={lngDropdownOpen}
               toggleLngDropdown={() => setLngDropdownOpen(!lngDropdownOpen)}
-              textColor="white"
+              textColor='white'
               translate={t}
               i18n={i18n}
             />
             <ThemeSwitch
               theme={theme}
               toggleTheme={toggleTheme}
-              className="d-inline-flex align-middle ml-auto mr-2 mr-sm-0"
+              className='d-inline-flex align-middle ml-auto mr-2 mr-sm-0'
             />
           </div>
         </div>
       </div>
 
-      <div className="container mt-5 mb-4">
+      <div className='container mt-5 mb-4'>
         <CSSTransition
           in={showComponent}
           timeout={300}
-          classNames="fade"
+          classNames='fade'
           unmountOnExit
         >
           {component}
