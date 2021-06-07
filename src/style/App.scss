@@ -140,3 +140,13 @@ a:hover {
 .language-svg-icon path {
   fill: #ffffff;
 }
+
+.reda-pic {
+  width: 315px;
+  height: 357px;
+
+  @media (min-width: 545px) {
+    width: 440px;
+    height: 500px;
+  }
+}

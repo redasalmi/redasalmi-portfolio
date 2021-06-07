@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Reda Salmi Portfolio" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Reda Salmi Portfolio</title>
 
@@ -31,9 +30,9 @@
     <div id="root"></div>
     <script>
       // initialize theme from localStorage
-      const theme = localStorage.getItem("theme");
+      const theme = localStorage.getItem('theme');
       if (theme) {
-        document.querySelector("body").classList.add(theme);
+        document.querySelector('body').classList.add(theme);
       }
     </script>
   </body>
