@@ -115,7 +115,7 @@ const About = ({ translate }) => {
 
       <div className='col-12 col-lg-6 text-center p-3 p-sm-1 p-md-0'>
         <ImageLoader
-          imgSrc='/reda-pic.jpg'
+          imgSrc='/reda-pic.webp'
           imgAlt='reda'
           imgClass='text-md-right reda-pic'
           loaderHeight={500}
