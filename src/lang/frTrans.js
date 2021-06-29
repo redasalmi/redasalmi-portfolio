@@ -36,15 +36,14 @@ export const FR_TRANS = {
   'built with': 'Réalisé avec',
   'react js': 'react JS',
   'professional project': 'Projet professionnel',
-  'it books': 'IT Books',
-  'it books text':
-    "Site Web proposant des livres sur l'informatique et la programmation.",
-  'free images': 'Free Images',
-  'free images text':
-    'Un site Internet pour trouver des images gratuites et les télécharger.',
   'khedemni project': 'Khedemni',
   'khedemni project text':
     'Un site de recrutement spécialisé dans l’hôtellerie et la restauration.',
+  'caronline project': 'Caronline-dz',
+  'caronline project text': 'Un site de réservation de véhicule en ligne.',
+  'it books': 'IT Books',
+  'it books text':
+    "Site Web proposant des livres sur l'informatique et la programmation.",
 
   // skills section
   'skills title': 'Compétences',

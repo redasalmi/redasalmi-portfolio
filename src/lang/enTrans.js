@@ -36,13 +36,13 @@ export const EN_TRANS = {
   'built with': 'Built with',
   'react js': 'react JS',
   'professional project': 'Professional Project',
-  'it books': 'IT Books',
-  'it books text': 'Website for IT, Programming and Computer Science Books.',
-  'free images': 'Free Images',
-  'free images text': 'A website to browse for free images and download them.',
   'khedemni project': 'Khedemni',
   'khedemni project text':
     'A recruitment website, specialized in hostelry and restoration jobs.',
+  'caronline project': 'Caronline-dz',
+  'caronline project text': 'An online vehicle reservation website.',
+  'it books': 'IT Books',
+  'it books text': 'Website for IT, Programming and Computer Science Books.',
 
   // skills section
   'skills title': 'Skills',
